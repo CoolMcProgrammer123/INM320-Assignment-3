@@ -1,9 +1,16 @@
 /* This is the original example. You can take all css styles from here. */
 
+$bodyTextColor: #787878;
+$hoverTextColor: #999999;
+$anchorTextColor: #111111;
+$footerTextColor: #989898;
+$postTitleTextColor: #324360;
+$postTitleHoverTextColor: #35c4ce;
+
 body {
     font-family: Quando;
     font-size: 15px;
-    color: #787878;
+    color: $bodyTextColor;
 }
 img {
     max-width: 100%;
@@ -16,11 +23,11 @@ p {
 a {
     font-weight: 400;
     text-decoration: none;
-    color: #111111;
+    color: $anchorTextColor;
     transition: .20s;
 }
 a:hover {
-    color: #999999;
+    color: $hoverTextColor;
 }
 h1,
 h2,
@@ -34,7 +41,7 @@ h6 {
     font-weight: 400;
     line-height: 1.3em;
     word-wrap: break-word;
-    color: #111111;
+    color: $anchorTextColor;
 }
 h1 {
     font-size: 37px;
@@ -91,7 +98,7 @@ article {
     margin-top: 0;
 }
 .post-title a {
-    color: #324360;
+    color: $postTitleTextColor;
     text-transform: uppercase;
     font-size: 26px;
     font-weight: 900;
@@ -101,7 +108,7 @@ article {
     transition: all .3s ease;
 }
 .post-title a:hover {
-    color: #35c4ce;
+    color: $postTitleHoverTextColor;
 }
 
 
@@ -111,13 +118,13 @@ footer {
     padding: 30px 0;
     text-align: center;
     background: #eaf2ff;
-    color: #989898;
+    color: $footerTextColor;
 }
 #footer a {
-    color: #989898;
+    color: $footerTextColor;
 }
 #footer a:hover {
-    color: #111111;
+    color: $anchorTextColor;
 }
 .footer-logo {
     width: 200px;
@@ -141,7 +148,7 @@ footer {
 #footer-copyright {
     padding: 20px 0;
     font-size: 12px;
-    color: #989898;
+    color: $footerTextColor;
 }
 
 
@@ -168,24 +175,24 @@ footer {
     }
     header nav a {
         font-family: 'Josefin Sans', sans-serif;
-        color: #324360;
+        color: $postTitleTextColor;
         letter-spacing: 1px;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 900;
     }
     header nav a:hover {
-        color: #35c4ce;
+        color: $postTitleHoverTextColor;
     }
     header nav li.menu-item-has-children > a::after {
         margin-left: 7px;
         font-family: 'FontAwesome';
         font-size: 13px;
-        color: #324360;
+        color: $postTitleTextColor;
         content: '\f078';
     }
     .current-menu-item a {
-        border-bottom: 2px solid #324360;
+        border-bottom: 2px solid $postTitleTextColor;
     }
     /* sub nav */
     header nav ul ul {
@@ -208,7 +215,7 @@ footer {
     }
     header nav ul ul a {
         display: block;
-        color: #111111;
+        color: $anchorTextColor;
         min-width: 175px;
         margin: 0;
         padding: 20px 10px;
